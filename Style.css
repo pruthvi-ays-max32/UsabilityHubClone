@@ -1,0 +1,143 @@
+/* Importing fonts and doing initial Setup */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background: #000; */
+}
+
+/* Utility/Global Color Defined for Web Site*/
+:root {
+   --primary-text-color:#183b56;
+   --secondary-text-color:#577592;
+   --accent-color:#2294ed;
+   --accent-color-dark: #1d69a3;
+   --padding-inline-section: 20px;
+}
+
+body {
+    font—family: 'Poppins' , sans-serif;
+    color: var(--primary-text-color)
+}
+
+/* Special Features defining for each tag*/
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.small-bold-text{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* making Flex easy to use */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.secondary-btn{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px 24px;
+    color: var(--primary-text-color) !important;
+    transition: 0.2s ease-out;
+    
+}
+.secondary-btn:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+.primary-btn{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-btn:hover{
+    background-color: var(--accent-color-dark);
+}
+
+/* Making a proper container for whole websites defining fixed width and margin padding etc. */
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+/* Banner Text */
+.top-banner{
+    background-color: #4fb3d4;
+    background-image: url('Assets/asset\ 28.png');
+    background-size: 300px;
+    /* background-repeat: no-repeat; */
+}
+
+.banner-text{
+    padding: 15px 30px;
+    color: white;
+    text-align: center;
+}
+
+/* Header Section */
+.nav-container{
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.logo-img{
+    width: 200px;
+}
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+.hower-links{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hower-links:hover{
+    color: var(--accent-color);
+}
+
+
